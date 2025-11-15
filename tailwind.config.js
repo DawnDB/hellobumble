@@ -1,12 +1,32 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
     "./app/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["Inter", "ui-sans-serif", "system-ui"],
+      },
+      colors: {
+        bee: {
+          yellow: "#F7D65A",
+          black: "#000000",
+        },
+        pastel: {
+          pink: "#F8D7E3",
+          blue: "#D9EAF7",
+          cream: "#FFF8E8",
+        },
+      },
+      borderRadius: {
+        xl: "1rem",
+        "2xl": "1.5rem",
+      },
+      boxShadow: {
+        soft: "0 4px 20px rgba(0,0,0,0.08)",
+      },
+    },
   },
   plugins: [],
 };
